@@ -1,0 +1,29 @@
+.jumbotron
+  %h1.animate__animated.animate__rotateIn.text-center
+    Welcome to Quiz App
+.row
+  .col
+    .card{style: "width: 18rem;"}
+      .card-body
+        %h5.card-title Want to have new Quiz Competition?
+        %h6.card-subtitle.mb-2.text-muted A new Quiz registration
+        %p.card-text Please follow the link and create a new quiz
+        %a.card-link{href: "#"} New Quiz Competition
+        -# %a.card-link{href: "#"} Another link
+  .col
+    .card{style: "width: 18rem;"}
+      .card-body
+        %h5.card-title Already have a Quiz Competition?
+        %h6.card-subtitle.mb-2.text-muted Ongoing Quiz
+        %p.card-text Just go to your Quiz through the link.
+        .card-link
+          = link_to "Your Quiz", login_url
+        -# %a.card-link{href: "#"} Another link
+  .col
+    .card{style: "width: 18rem;"}
+      .card-body
+        %h5.card-title Want to see archived Quiz Competitions?
+        %h6.card-subtitle.mb-2.text-muted Archived Quiz
+        %p.card-text Please click on the link below and get your archived Quiz!
+        %a.card-link{href: "#"} Your archived Quizzes
+        -# %a.card-link{href: "#"} Another link
